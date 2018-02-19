@@ -13,7 +13,8 @@ if(NOT ANDROID)
 else()
 find_package(Boost REQUIRED)
 endif()
-find_package(OpenCV REQUIRED)
+set ( OpenCV_DIR   "/home/alfredoso/Software/OpenCV2/build/")
+find_package(OpenCV 2 REQUIRED)
 
 catkin_package(
   INCLUDE_DIRS include
