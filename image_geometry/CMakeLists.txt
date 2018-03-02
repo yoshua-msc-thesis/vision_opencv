@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 project(image_geometry)
 
 find_package(catkin REQUIRED sensor_msgs)
-set ( OpenCV_DIR   "/home/alfredoso/Software/OpenCV2/build/")
+set(OpenCV_DIR $ENV{OPENCV2_INSTALL_DIR})
 find_package(OpenCV 2 REQUIRED)
 
 catkin_package(CATKIN_DEPENDS sensor_msgs

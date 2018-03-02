@@ -13,7 +13,7 @@ if(NOT ANDROID)
 else()
 find_package(Boost REQUIRED)
 endif()
-set ( OpenCV_DIR   "/home/alfredoso/Software/OpenCV2/build/")
+set(OpenCV_DIR $ENV{OPENCV2_INSTALL_DIR})
 find_package(OpenCV 2 REQUIRED)
 
 catkin_package(
